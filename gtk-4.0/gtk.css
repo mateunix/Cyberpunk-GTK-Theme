@@ -1,0 +1,437 @@
+/* Window */
+window {
+    background-color: rgba(85, 3, 114, 1.00);
+    color: rgba(164, 211, 255, 1.00);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Soft shadow to separate it */
+}
+
+/* View */
+view {
+    background-color: rgba(126, 5, 169, 1.00);
+    color: rgba(231, 243, 255, 1.00);
+    padding: 20px;
+    margin-top: 10px; /* Add margin to separate from the header */
+    border-radius: 10px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1); /* Light inset shadow for depth */
+}
+
+/* Headerbar */
+headerbar {
+    background-color: rgba(85, 3, 114, 1.00);
+    color: rgba(164, 211, 255, 1.00);
+    border-color: rgba(101, 44, 142, 1.00);
+    opacity: 0.9;
+    min-height: 50px;
+    padding: 0 2px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow under the header */
+}
+
+/* Buttons within the headerbar */
+headerbar button {
+    margin: 0 10px;
+    padding: 1px 2px;
+    border: 3px solid transparent;
+    background-color: transparent;
+    color: rgba(0, 139, 255, 1.00);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 25px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Icon inside the button */
+headerbar button i {
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+}
+
+/* Highlight the button with a subtle effect on hover */
+headerbar button:hover {
+    background-color: rgba(72, 0, 255, 0.2);
+    color: #ffffff;
+    box-shadow: 0 0 5px rgba(72, 0, 255, 0);
+    transform: scale(1.0);
+}
+
+/* Modify the MenuBar to have spacing between menu items */
+GtkMenuBar {
+    spacing: 20px;  /* Space between the menu items */
+}
+
+/* Right-click (Context) Menu */
+GtkMenu {
+    background-color: rgba(126, 5, 169, 1.00); /* Purple background */
+    color: rgba(231, 243, 255, 1.00); /* Light text color */
+    border-radius: 10px; /* Rounded borders for the menu */
+    padding: 5px; /* Padding inside the menu to ensure the text doesn't touch the edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the menu */
+}
+
+/* Menu Item */
+GtkMenuItem {
+    margin: 5px 0; /* Space between menu items */
+    padding: 8px 15px;  /* Adjust the padding inside the buttons */
+    border-radius: 8px;
+}
+
+/* Hover Effect for Menu Items */
+GtkMenuItem:hover {
+    background-color: rgba(72, 0, 255, 0.2); /* Light purple hover background */
+    color: #ffffff; /* Change text color to white on hover */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+/* Active Selection on Menu Item (Right-click selection) */
+GtkMenuItem:active {
+    background-color: rgba(0, 184, 255, 0.3); /* Accent color for active selection */
+    color: #ffffff; /* White text for active selection */
+    border-radius: 8px; /* Maintain rounded corners when selected */
+}
+
+/* For adjusting the individual label buttons (File, Edit, View, etc.) */
+GtkButton {
+    padding: 8px 20px;  /* Add padding to individual buttons to increase their space */
+    margin-right: 10px; /* Optional: add right margin to space out buttons */
+}
+
+/* Optional: Add space between the icon buttons and label buttons */
+GtkButton.icon {
+    margin-right: 15px; /* Space between icon buttons and label buttons */
+}
+
+/* Optional: Adjust alignment for better visual distribution */
+GtkHeaderBar {
+    justify-content: space-between; /* Space out the items in the header */
+}
+
+/* Adjust the label buttons when they are in focus */
+GtkButton:focus {
+    outline: 2px solid #00B8FF; /* Optional: Add focus style to buttons */
+}
+
+/* Sidebar */
+sidebar {
+    background-color: rgba(126, 5, 169, 1.00);
+    color: rgba(231, 243, 255, 1.00);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15); /* Inset shadow for depth */
+    opacity: 0.9;
+    margin-right: 10px; /* Space between sidebar and window */
+    padding: 15px; /* Padding to give some space inside */
+}
+
+/* Secondary Sidebar */
+secondary-sidebar {
+    background-color: rgba(115, 45, 146, 1.00);
+    color: rgba(225, 240, 255, 1.00);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15); /* Inset shadow for depth */
+    opacity: 0.9;
+}
+/*Nautilus*/
+placesidebar {
+    background-color: rgba(126, 5, 169, 1);
+    
+}
+
+.navigation-sidebar {
+    background-color: rgba(126, 5, 169, 1);
+ }   
+ 
+/* Example GTK4 Sidebar Styling for Nautilus */
+.nautilus-sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.nautilus-sidebar .sidebar-item {
+    margin-bottom: 10px;
+}
+
+.nautilus-sidebar .sidebar-item:last-child {
+    margin-bottom: 0;
+}
+
+.nautilus-sidebar .sidebar-item {
+    background-color: rgba(126, 5, 169, 1.00);
+    color: rgba(231, 243, 255, 1.00);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.nautilus-sidebar .sidebar-item:hover {
+    background-color: rgba(109, 38, 140, 1.00);
+}
+
+/* Nautilus Right-click (Context) Menu */
+.nautilus .GtkMenu {
+    background-color: rgba(126, 5, 169, 1.00); /* Purple background */
+    color: rgba(231, 243, 255, 1.00); /* Light text color */
+    border-radius: 10px; /* Rounded borders for the menu */
+    padding: 5px; /* Padding inside the menu to ensure the text doesn't touch the edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow around the menu */
+}
+
+/* Nautilus Menu Item */
+.nautilus .GtkMenuItem {
+    padding: 10px 20px; /* Add padding to each menu item for better spacing */
+    border-radius: 8px; /* Rounded corners for each menu item */
+    margin: 5px 0; /* Space between menu items */
+}
+
+/* Hover Effect for Nautilus Menu Items */
+.nautilus .GtkMenuItem:hover {
+    background-color: rgba(72, 0, 255, 0.2); /* Light purple hover background */
+    color: #ffffff; /* Change text color to white on hover */
+    cursor: pointer; /* Change cursor to indicate interactivity */
+}
+
+/* Active Selection on Nautilus Menu Item (Right-click selection) */
+.nautilus .GtkMenuItem:active {
+    background-color: rgba(0, 184, 255, 0.3); /* Accent color for active selection */
+    color: #ffffff; /* White text for active selection */
+    border-radius: 8px; /* Maintain rounded corners when selected */
+}
+
+/* Card */
+card {
+    background-color: rgba(109, 38, 140, 1.00);
+    color: rgba(214, 234, 255, 1.00);
+    padding: 15px;
+    margin-bottom: 20px; /* Space between multiple cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+    border-radius: 8px;
+}
+
+/* Thumbnail */
+thumbnail {
+    background-color: rgba(109, 38, 140, 1.00);
+    color: rgba(214, 234, 255, 1.00);
+    padding: 10px;
+    margin: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1); /* Inset shadow for inner depth */
+    border-radius: 8px;
+}
+
+/* Dialog */
+dialog {
+    background-color: rgba(126, 5, 169, 1.00);
+    color: rgba(231, 243, 255, 1.00);
+}
+
+/* Popover */
+popover {
+    background-color: rgba(109, 38, 140, 1.00);
+    color: rgba(214, 234, 255, 1.00);
+}
+
+/* Shade */
+shade {
+    background-color: rgba(0, 0, 0, 0.32);
+}
+
+/* Scrollbar */
+scrollbar {
+    outline-color: rgba(85, 3, 114, 0.50);
+}
+
+/* Accent Color */
+accent {
+    background-color: rgba(0, 184, 255, 1.00);
+    color: rgba(0, 0, 0, 1.00);
+}
+
+/* Destructive */
+destructive {
+    background-color: rgba(253, 161, 160, 1.00);
+    color: rgba(0, 0, 0, 1.00);
+}
+
+/* Warning */
+warning {
+    background-color: rgba(247, 224, 98, 1.00);
+    color: rgba(0, 0, 0, 1.00);
+}
+
+/* Success */
+success {
+    background-color: rgba(146, 207, 156, 1.00);
+    color: rgba(0, 0, 0, 1.00);
+}
+
+/* Error */
+error {
+    background-color: rgba(253, 161, 160, 1.00);
+    color: rgba(0, 0, 0, 1.00);
+}
+
+/* Highlighted Text */
+selection {
+    background-color: #00B8FF;
+    color: #000000;
+}
+
+textview text selection, textview text:selected {
+    background-color: #00B8FF;
+    color: #000000;
+}
+
+/* Adjust tab size */
+tab {
+    min-width: 80px; /* Set a minimum width for the tab */
+    min-height: 30px; /* Set a minimum height for the tab */
+    padding: 1px 1px; /* Add padding inside the tab */
+    margin: 0 5px; /* Add some space between tabs */
+    font-size: 14px; /* Adjust font size for readability */
+    background-color: rgba(85, 3, 114, 1.00); /* Maintain the active color */
+    color: rgba(164, 211, 255, 1.00); /* Light text color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Active Tab */
+tab.tab-active {
+    background-color: rgba(109, 38, 140, 1.00); /* Distinct color for active tab */
+    color: rgba(255, 255, 255, 1.00); /* Bright text color for focus */
+    font-weight: bold; /* Make active tab text stand out */
+}
+
+/* Hover Effects */
+tab:hover {
+    background-color: rgba(126, 5, 169, 0.9); /* Slightly lighter on hover */
+    color: #ffffff; /* Brighten text */
+    transform: scale(1.05); /* Subtle size increase for hover feedback */
+}
+
+/* Inactive Tab */
+tab:not(.tab-active) {
+    background-color: rgba(60, 3, 90, 1.00); /* Darker shade for inactive tabs */
+    color: rgba(140, 180, 255, 1.00); /* Light text for inactive tabs */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.15); /* Added depth for inactive state */
+}
+
+/* Active Tab */
+tab.tab-active {
+    background-color: rgba(85, 3, 114, 1.00); /* Active tab color */
+    color: rgba(164, 211, 255, 1.00); /* Light text for active tabs */
+}
+
+/* Focused Tab - Add a light blue outline */
+tab:focus {
+    outline: 3px solid rgba(156, 243, 243, 1.00); /* Light blue outline */
+    outline-offset: 2px; /* Optional: offset for clearer effect */
+}
+
+/* Active Tab (if you want to distinguish the active tab more clearly) */
+tab.tab-active {
+    background-color: rgba(85, 3, 114, 1.00);
+    color: rgba(164, 211, 255, 1.00);
+}
+
+/* Optional Hover Effects for Inactive Tabs */
+tab:not(.tab-active):hover {
+    background-color: rgba(85, 3, 114, 0.8); /* Slightly lighter when hovered */
+}
+
+/* Tooltip Styling */
+.tooltip {
+    background-color: rgba(64, 6, 84, 1.0); /* Dark purple, fully opaque */
+    color: rgba(255, 255, 255, 1.0); /* White text for high contrast */
+    border: 1px solid rgba(109, 38, 140, 1.0); /* Add a border for definition */
+    border-radius: 8px; /* Smooth rounded corners */
+    padding: 10px; /* Add space inside the tooltip */
+    font-size: 14px; /* Adjust font size for readability */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for visibility */
+    opacity: 1.0; /* Ensure tooltip is fully opaque */
+}
+
+/* Tooltip Hover State */
+.tooltip:hover {
+    background-color: rgba(64, 6, 84, 1.0); /* Maintain same background */
+    color: rgba(255, 255, 255, 1.0); /* Ensure consistent text color */
+    opacity: 1.0; /* Ensure no transparency on hover */
+}
+
+/* Tooltip Animation for Appearance */
+.tooltip {
+    animation: fadeIn 0.2s ease-in-out; /* Smooth fade-in effect */
+    transition: opacity 0.2s ease-in-out; /* Smooth transition */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/* Color Palette */
+
+/* Blue */
+.blue-1 { background-color: rgba(156, 243, 243, 1.00); }
+.blue-2 { background-color: rgba(152, 239, 239, 1.00); }
+.blue-3 { background-color: rgba(148, 235, 235, 1.00); }
+.blue-4 { background-color: rgba(119, 206, 206, 1.00); }
+.blue-5 { background-color: rgba(90, 177, 178, 1.00); }
+
+/* Green */
+.green-1 { background-color: rgba(177, 253, 215, 1.00); }
+.green-2 { background-color: rgba(175, 250, 213, 1.00); }
+.green-3 { background-color: rgba(172, 247, 210, 1.00); }
+.green-4 { background-color: rgba(142, 217, 181, 1.00); }
+.green-5 { background-color: rgba(114, 187, 152, 1.00); }
+
+/* Yellow */
+.yellow-1 { background-color: rgba(255, 244, 161, 1.00); }
+.yellow-2 { background-color: rgba(255, 243, 160, 1.00); }
+.yellow-3 { background-color: rgba(255, 241, 158, 1.00); }
+.yellow-4 { background-color: rgba(223, 210, 128, 1.00); }
+.yellow-5 { background-color: rgba(193, 179, 97, 1.00); }
+
+/* Red */
+.red-1 { background-color: rgba(255, 191, 191, 1.00); }
+.red-2 { background-color: rgba(255, 186, 186, 1.00); }
+.red-3 { background-color: rgba(255, 181, 181, 1.00); }
+.red-4 { background-color: rgba(226, 154, 155, 1.00); }
+.red-5 { background-color: rgba(198, 129, 129, 1.00); }
+
+/* Orange */
+.orange-1 { background-color: rgba(255, 186, 38, 1.00); }
+.orange-2 { background-color: rgba(255, 179, 24, 1.00); }
+.orange-3 { background-color: rgba(255, 173, 0, 1.00); }
+.orange-4 { background-color: rgba(227, 147, 0, 1.00); }
+.orange-5 { background-color: rgba(200, 122, 0, 1.00); }
+
+/* Purple */
+.purple-1 { background-color: rgba(225, 142, 255, 1.00); }
+.purple-2 { background-color: rgba(216, 134, 255, 1.00); }
+.purple-3 { background-color: rgba(207, 125, 255, 1.00); }
+.purple-4 { background-color: rgba(183, 102, 230, 1.00); }
+.purple-5 { background-color: rgba(160, 79, 205, 1.00); }
+
+/* Light */
+.light-0 { background-color: rgba(0, 0, 0, 1.00); }
+.light-1 { background-color: rgba(5, 5, 5, 1.00); }
+.light-2 { background-color: rgba(27, 27, 27, 1.00); }
+.light-3 { background-color: rgba(54, 54, 54, 1.00); }
+.light-4 { background-color: rgba(84, 84, 84, 1.00); }
+
+/* Dark */
+.dark-0 { background-color: rgba(115, 115, 115, 1.00); }
+.dark-1 { background-color: rgba(148, 148, 148, 1.00); }
+.dark-2 { background-color: rgba(182, 182, 182, 1.00); }
+.dark-3 { background-color: rgba(218, 218, 218, 1.00); }
+.dark-4 { background-color: rgba(255, 255, 255, 1.00); }
+

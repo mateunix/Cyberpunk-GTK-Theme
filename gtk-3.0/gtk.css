@@ -1,0 +1,218 @@
+
+/* Window */
+window {
+    background-color: rgba(85, 3, 114, 1.00);
+    color: rgba(164, 211, 255, 1.00);
+}
+
+/* View */
+.view {
+    background-color: rgba(126, 5, 169, 1.00);
+    color: rgba(231, 243, 255, 1.00);
+}
+
+/* Headerbar */
+headerbar {
+    background-color: rgba(85, 3, 114, 1.00);
+    color: rgba(164, 211, 255, 1.00);
+    border-color: rgba(101, 44, 142, 1.00);
+    opacity: 0.9;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: rgba(126, 5, 169, 1.00);
+    color: rgba(231, 243, 255, 1.00);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.08);
+    opacity: 0.9;
+}
+
+/* Secondary Sidebar */
+.secondary-sidebar {
+    background-color: rgba(115, 45, 146, 1.00);
+    color: rgba(225, 240, 255, 1.00);
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.08);
+    opacity: 0.9;
+}
+
+/* Card */
+.card {
+    background-color: rgba(109, 38, 140, 1.00);
+    color: rgba(214, 234, 255, 1.00);
+}
+
+/* Thumbnail */
+.thumbnail {
+    background-color: rgba(109, 38, 140, 1.00);
+    color: rgba(214, 234, 255, 1.00);
+}
+
+/* Dialog */
+.dialog {
+    background-color: rgba(126, 5, 169, 1.00);
+    color: rgba(231, 243, 255, 1.00);
+}
+
+/* Button */
+button {
+    background-color: rgba(85, 3, 114, 1.00);
+    color: rgba(0, 184, 255, 1.00);
+    border: 2px solid transparent; /* Initial border is invisible */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, border 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for button */
+button:hover {
+    background-color: rgba(72, 0, 255, 0.2); /* Slightly lighter background */
+    border: 2px solid rgba(72, 0, 255, 0.2); /* Adding border to simulate a shadow */
+ }  
+
+/* Focus effect for button (optional) */
+button:focus {
+    border: 2px solid rgba(0, 184, 255, 1.00); /* Adding an accent color on focus */
+}
+/* Popover */
+.popover {
+    background-color: rgba(109, 38, 140, 1.00);
+    color: rgba(214, 234, 255, 1.00);
+}
+
+/* Shade */
+.shade {
+    background-color: rgba(0, 0, 0, 0.32);
+}
+
+/* Scrollbar */
+scrollbar {
+    outline-color: rgba(85, 3, 114, 0.50);
+}
+
+/* Accent Color */
+.accent {
+    background-color: rgba(0, 184, 255, 1.00);
+    color: rgba(0, 0, 0, 1.00);
+}
+
+/* Destructive */
+.destructive {
+    background-color: rgba(253, 161, 160, 1.00);
+    color: rgba(0, 0, 0, 1.00);
+}
+
+/* Warning */
+.warning {
+    background-color: rgba(247, 224, 98, 1.00);
+    color: rgba(0, 0, 0, 1.00);
+}
+
+/* Success */
+.success {
+    background-color: rgba(146, 207, 156, 1.00);
+    color: rgba(0, 0, 0, 1.00);
+}
+
+/* Error */
+.error {
+    background-color: rgba(253, 161, 160, 1.00);
+    color: rgba(0, 0, 0, 1.00);
+}
+
+/* Highlighted Text */
+selection {
+    background-color: #00B8FF;
+    color: #000000;
+}
+
+textview text selection, textview text:selected {
+    background-color: #00B8FF;
+    color: #000000;
+}
+
+/* Inactive Tab */
+.tab:not(.tab-active) {
+    background-color: rgba(60, 3, 90, 1.00); /* Darker shade for inactive tabs */
+    color: rgba(140, 180, 255, 1.00); /* Light text for inactive tabs */
+}
+
+/* Active Tab */
+.tab.tab-active {
+    background-color: rgba(85, 3, 114, 1.00); /* Active tab color */
+    color: rgba(164, 211, 255, 1.00); /* Light text for active tabs */
+}
+
+/* Focused Tab - Add a light blue outline */
+.tab:focus {
+    outline: 3px solid rgba(156, 243, 243, 1.00); /* Light blue outline */
+    outline-offset: 2px; /* Optional: offset for clearer effect */
+}
+
+/* Active Tab (if you want to distinguish the active tab more clearly) */
+.tab.tab-active {
+    background-color: rgba(85, 3, 114, 1.00); /* Keep the active tab color */
+    color: rgba(164, 211, 255, 1.00); /* Text color for active tabs */
+}
+
+/* Optional Hover Effects for Inactive Tabs */
+.tab:not(.tab-active):hover {
+    background-color: rgba(85, 3, 114, 0.8); /* Slightly lighter when hovered */
+}
+/* Color Palette */
+
+/* Blue */
+.blue-1 { background-color: rgba(156, 243, 243, 1.00); }
+.blue-2 { background-color: rgba(152, 239, 239, 1.00); }
+.blue-3 { background-color: rgba(148, 235, 235, 1.00); }
+.blue-4 { background-color: rgba(119, 206, 206, 1.00); }
+.blue-5 { background-color: rgba(90, 177, 178, 1.00); }
+
+/* Green */
+.green-1 { background-color: rgba(177, 253, 215, 1.00); }
+.green-2 { background-color: rgba(175, 250, 213, 1.00); }
+.green-3 { background-color: rgba(172, 247, 210, 1.00); }
+.green-4 { background-color: rgba(142, 217, 181, 1.00); }
+.green-5 { background-color: rgba(114, 187, 152, 1.00); }
+
+/* Yellow */
+.yellow-1 { background-color: rgba(255, 244, 161, 1.00); }
+.yellow-2 { background-color: rgba(255, 243, 160, 1.00); }
+.yellow-3 { background-color: rgba(255, 241, 158, 1.00); }
+.yellow-4 { background-color: rgba(223, 210, 128, 1.00); }
+.yellow-5 { background-color: rgba(193, 179, 97, 1.00); }
+
+/* Red */
+.red-1 { background-color: rgba(255, 191, 191, 1.00); }
+.red-2 { background-color: rgba(255, 186, 186, 1.00); }
+.red-3 { background-color: rgba(255, 181, 181, 1.00); }
+.red-4 { background-color: rgba(226, 154, 155, 1.00); }
+.red-5 { background-color: rgba(198, 129, 129, 1.00); }
+
+/* Orange */
+.orange-1 { background-color: rgba(255, 186, 38, 1.00); }
+.orange-2 { background-color: rgba(255, 179, 24, 1.00); }
+.orange-3 { background-color: rgba(255, 173, 0, 1.00); }
+.orange-4 { background-color: rgba(227, 147, 0, 1.00); }
+.orange-5 { background-color: rgba(200, 122, 0, 1.00); }
+
+/* Purple */
+.purple-1 { background-color: rgba(225, 142, 255, 1.00); }
+.purple-2 { background-color: rgba(216, 134, 255, 1.00); }
+.purple-3 { background-color: rgba(207, 125, 255, 1.00); }
+.purple-4 { background-color: rgba(183, 102, 230, 1.00); }
+.purple-5 { background-color: rgba(160, 79, 205, 1.00); }
+
+/* Light */
+.light-0 { background-color: rgba(0, 0, 0, 1.00); }
+.light-1 { background-color: rgba(5, 5, 5, 1.00); }
+.light-2 { background-color: rgba(27, 27, 27, 1.00); }
+.light-3 { background-color: rgba(54, 54, 54, 1.00); }
+.light-4 { background-color: rgba(84, 84, 84, 1.00); }
+
+/* Dark */
+.dark-0 { background-color: rgba(115, 115, 115, 1.00); }
+.dark-1 { background-color: rgba(148, 148, 148, 1.00); }
+.dark-2 { background-color: rgba(182, 182, 182, 1.00); }
+.dark-3 { background-color: rgba(218, 218, 218, 1.00); }
+.dark-4 { background-color: rgba(255, 255, 255, 1.00); }
+

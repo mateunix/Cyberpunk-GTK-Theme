@@ -1,0 +1,12 @@
+Type=X-GNOME-Metatheme
+[Desktop Entry]
+Name=Cosmic
+Comment=An Flat Gtk+ theme based on Elegant Design
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Cosmic
+MetacityTheme=Cosmic
+IconTheme=Pop
+CursorTheme=Pop
+ButtonLayout=close ,minimize ,maximize :menu
